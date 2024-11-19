@@ -1,0 +1,49 @@
+.month-selection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .glass-card-22 {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 300px;
+    text-align: center; 
+  }
+  .glass-card-22 h2{
+    border-radius: .5rem;
+    padding: 1rem;
+    background:linear-gradient(135deg , #013e7e,#007BFF, #013e7e);
+  }
+  .month-dropdown {
+    padding: 10px;
+    margin: 15px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-size: 16px;
+    background-color: black;
+  }
+  
+  .save-button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  

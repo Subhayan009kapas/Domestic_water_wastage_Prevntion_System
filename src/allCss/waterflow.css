@@ -1,0 +1,243 @@
+/* Container for the entire component */
+.waterflow-container {
+    min-height: 50vh;
+    width: 50vw;
+    margin: 10vh 30%;
+    border-radius: 1rem;
+    /* background-color: #e37f7f; */
+    /* background-color: black; */
+    padding: 20px;
+    min-width: 50%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); */
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+
+}
+
+/* Header styling */
+.waterflow-header-all {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.waterflow-header h1 {
+    font-size: 2rem;
+    color: #00bcd4;
+}
+.before-main{
+    background-color: #cfcfcf2a;
+    backdrop-filter: blur(5px);
+    border: .5px solid black;
+    border-radius: 1rem;
+    padding: 20px;  
+    min-height: 50vh;
+    max-width: 800px;
+    /* min-width: 80vw; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.usages-title {
+    /* margin-right: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #4ec0f5, #6313ef, rgb(81, 12, 229), rgb(81, 12, 229), rgb(47, 174, 237));
+    box-shadow: 0px 0px 10px black ,inset -5px -5px 5px #1e1e1e, inset 5px -5px 10px #1e1e1e;
+    border-radius: .5rem;
+    width: 50%;
+    min-height: 2.5rem;
+    font-size: x-large;
+    font-weight: 700;
+}
+.usages-title strong{
+    background-color: rgb(202, 223, 202);
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    color: #333333;
+    font-size: x-large;
+}
+.bar-container{
+    width: 70%;
+    border-radius: 1rem;
+     box-shadow: 5px 5px 10px black,inset -5px -5px 10px #1e1e1e;
+}
+
+/* Main section styling */
+.waterflow-main {
+    max-width: 650px;
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    background-color: #2a2a2a;
+    box-shadow: 0px 10px 25px black;
+}
+
+.waterflow-main:last-of-type {
+    border-bottom: none;
+}
+
+.waterflow-main p {
+    color: #e0e0e0;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.waterflow-main strong {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Flex row for penalty and regular sections */
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    margin-top: 20px;
+}
+
+/* Price box styling */
+.price-row .price-box {
+    width: 48%; /* Ensures both sections fit in one row */
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+}
+
+/* Regular price section */
+.price-box.regular {
+    background-color: #2e473a; /* Greenish background for regular */
+    border: 2px solid #4caf50; /* Green border */
+}
+
+/* Penalty price section */
+.price-box.penalty {
+    background-color: #472e2e; /* Reddish background for penalty */
+    border: 2px solid #d32f2f; /* Red border */
+}
+
+/* Regular and Penalty Price Titles */
+h2 {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #cccccc;
+}
+
+/* Highlight for regular usage */
+.usage-regular {
+    color: #4caf50;
+}
+
+/* Highlight for penalty usage */
+.usage-penalty {
+    color: #c9c4bb;
+}
+
+/* Total price */
+.total-price {
+    font-size: 22px;
+    color: #d32f2f;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer styling */
+.waterflow-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.waterflow-footer p {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Loading text styling */
+/* .load {
+    text-align: center;
+    font-size: 18px;
+    color: #cccccc;
+} */
+/* Total price styling with more emphasis */
+.total-price {
+    font-size: 24px;
+    color: #f1c40f; /* Gold color for visibility */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background: linear-gradient(145deg, #4ec0f5, #6313ef, rgb(81, 12, 229), rgb(81, 12, 229), rgb(47, 174, 237)); /* Slightly lighter background */
+    border: 2px solid #f39c12; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5); /* Add subtle shadow for emphasis */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Animation for hover effect */
+   
+}
+.total-price p{
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+/* Hover effect to enhance interaction */
+
+
+@media (max-width: 768px) {
+    .waterflow-header h1{
+        font-size: 2rem;
+    }
+    .before-main{
+        min-width: 70vw;
+        padding: 0px;
+       position: relative;
+       right: 45px;
+       height: 60vh;
+    }
+    .waterflow-header-all h1{
+        font-size: 1.2rem;
+    }
+    .usages-title{
+        font-size: 1rem;
+        width: 60vw;
+        position: relative;
+        top: 10px;
+    }
+    .usages-title strong{
+        font-size: 1rem;
+    }
+    .waterflow-main{
+        padding: 5px;
+        width: 60vw;
+        margin: 0.5rem;
+    }
+    .bar-container{
+        height: 20px;
+    }
+    .total-price{
+        height: 4vh;
+        
+    }
+    .total-price p{
+        font-size: 20px;
+    }
+    .price-box.penalty{
+        width: 20vw;
+        font-size: 2vw;
+    }
+    .price-box.penalty p{
+        font-size: 2vh;
+    }
+    .price-box.regular{
+        width: 20vw;
+
+    }
+}

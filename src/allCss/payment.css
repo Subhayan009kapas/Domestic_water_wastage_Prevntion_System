@@ -1,0 +1,141 @@
+.payment-container {
+    margin:0vh auto;
+    min-width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    background-color: black; /* Or whatever background color you prefer */
+  }
+  
+  .payment-header {
+    margin-bottom: 20px;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+  }
+  
+
+  .outer-payment-main{
+    width: 100%;
+    margin-left: 0px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .payment-main {
+    /* flex: 1; */
+    /* max-height: 50vh; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 2rem;
+    /* background-color: #007bff; */
+    max-width: 600px; /* Adjust based on your layout */
+  }
+  
+  .data-list {
+    width: 95%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #222; /* Background for data list */
+    padding: 20px;
+    border-radius: 1rem; /* Optional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  }
+  .data-list h3{
+    padding: 0 0 1rem;
+  }
+  .reversed-months {
+    max-height: 50vh;
+    overflow: auto;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;  /* Reverse the order of the items */
+    margin-bottom: 20px;
+  }
+  .month-box:last-child{
+    background-color: rgba(255, 0, 0, 0.216);
+  }
+  
+
+  .month-box {
+    color: white; /* Color for month box text */
+    margin: 5px 0; /* Margin between months */
+    border-bottom: 1px solid #ccc;  
+    }
+  
+    .month-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      gap: 10px; /* Space between columns */
+      margin-top: 5px;
+    }
+    
+    /* Styling for payment status */
+    .status {
+      font-weight: bold;
+      text-align: left;
+    }
+    
+    .done {
+      color: green;
+    }
+    
+    .not-done {
+      color: red;
+    }
+    
+    /* Styling for water usage */
+    .usage {
+      text-align: right;
+      font-size: 16px;
+    }
+  .current-month-info {
+    display: none;
+      background-color: #68f57635;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 1px solid;
+  }
+
+  
+  .pay-button {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #23ec56;
+    background-color: #007bff;;
+    text-shadow: 0 0 2px black;
+    box-shadow:inset -2px -2px 5px black;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #51f37a; /* Darker shade for hover effect */
+  }
+
+  
+  

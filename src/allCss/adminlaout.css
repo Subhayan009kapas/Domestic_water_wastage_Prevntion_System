@@ -1,0 +1,67 @@
+.profile-container-admin {
+    height: auto; /* Adjusted to fit content */
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: #333;
+    padding: 15px; /* Increased padding for better spacing */
+    border-radius: 8px; /* Slightly increased border-radius for smooth edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for stronger effect */
+    z-index: 10;
+    backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+    color: #fff; /* Text color white for dark background */
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-info-admin {
+    text-align: right;
+  }
+  
+  .profile-name-admin {
+    font-weight: bold;
+    display: block;
+    font-size: 1.5rem; /* Larger font for readability */
+    color: #fff; /* White text for name */
+  }
+  
+  .profile-email-admin {
+    color: #ccc; /* Light gray for email */
+    font-size: 1.1rem;
+  }
+  
+  .signout-button {
+    width: 100%;
+    border: 2px solid #ff4b4b;
+    background-color: transparent;
+    color: #ff4b4b;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 1rem auto;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signout-button:hover {
+    background-color: #1a1a1a;
+  }
+  
+  /* Additional styles for the expanded buttons */
+  .expanded-buttons-admin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* Space between email and expanded buttons */
+  }
+  
+  .arrow-button-admin {
+    background: none;
+    border: none;
+    color: #ff4b4b; /* Color for the arrow button */
+    font-size: 1.5rem; /* Increase size for visibility */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .arrow-button-admin:hover {
+    color: #ff7979;
+    background-color: transparent;
+  }

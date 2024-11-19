@@ -1,0 +1,378 @@
+
+.admin-dashboard-container {
+  margin: 10vh 22%;
+  border-radius: 1rem;  
+  width: 70%;
+  min-height: 60vh;
+  max-width: 1200px;
+  background-color: #000000;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* border-radius: 10px; */
+  /* margin-top: 30px; */
+}
+
+/* Header styling */
+.admin-dashboard-header {
+  /* background-color: #333333; */
+  color: #ffffff;
+  /* padding: 15px 20px; */
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.admin-dashboard-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #ff9900; /* Bright orange for the title */
+  text-shadow: 2px 2px 5px #333;
+}
+
+
+/* Main Content */
+.admin-dashboard-main {
+  background-color: #1e1e1e;
+  min-height: 60vh;
+  padding: 20px;
+  border-radius: 1rem;
+  margin-top: 10px;
+}
+.search-and-table{
+  max-height: 60vh  ;
+  overflow-y: scroll;
+  background-color: #1e1e1e;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px black; 
+}
+/* Custom scrollbar styling */
+.search-and-table::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.search-and-table::-webkit-scrollbar-track {
+  background: #333; /* Background color of the scrollbar track */
+  border-radius: 1rem; /* Rounded corners for track */
+}
+
+.search-and-table::-webkit-scrollbar-thumb {
+  background: #555; /* Color of the scrollbar thumb */
+  border-radius: 1rem; /* Rounded corners for thumb */
+}
+
+.search-and-table::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Color of the scrollbar thumb on hover */
+}
+/* seacrhbar */
+.search-bar-User {
+  position: sticky;
+  top: 0px ;
+  left: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+  border-radius: 4px; /* Round corners */
+  padding: 5px;
+  
+}
+.search-bar-user-heading{
+  position: sticky;
+  top: 45px ;
+  left: 0px;
+ 
+  
+}
+
+.search-bar-User input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #4CAF50; /* Orange border to match theme */
+  border-radius: 1rem;
+  background-color: #333333; /* Dark background */
+  color: #ffffff; /* White text */
+  outline: none;
+  box-shadow: 0px 0px 5px black;
+  transition: border 0.3s ease;
+  flex: 1;
+}
+
+.search-bar-User input::placeholder {
+  color: #aaaaaa; /* Lighter text for placeholder */
+}
+.search-icon {
+  /* Spacing between input and icon */
+  cursor: pointer; /* Change cursor to pointer */
+  position: relative;
+  right: 2rem;
+}
+
+.search-bar-User input:focus {
+  border-color: #ff9900; /* Green border when focused */
+}
+
+.no-results {
+  color: #ff4d4d;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Table Styling */
+.admin-dashboard-table {
+  /* background-color: #4CAF50; */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.admin-dashboard-table th,
+.admin-dashboard-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #333333;
+}
+
+.admin-dashboard-table th {
+  background-color: #4CAF50;
+  /* background-color: #fff; */
+  text-align: center;
+  color: white;
+}
+
+.admin-dashboard-table th:nth-child(1){
+  border-top-left-radius:0.5rem;
+  border-bottom-left-radius: .5rem;
+}
+.admin-dashboard-table th:last-child{
+  border-top-right-radius:0.5rem;
+  border-bottom-right-radius: .5rem;
+  /* background-color: ; */
+}
+
+.admin-dashboard-table tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.admin-dashboard-table tbody tr:nth-child(odd) {
+  background-color: #1f1f1f;
+}
+
+.admin-dashboard-table tbody tr:hover {
+  background-color: #3a3a3a;
+}
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content-selected-user {
+  background-color: #0000003d;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(252, 255, 252);
+  padding: 20px;
+  border-radius: 1rem;
+  width: 80%;
+  max-width: 800px;
+  min-height:70vh ;
+  max-height: 50vh;
+  position: relative;
+  color: #000000;
+  overflow: auto;
+  /* box-shadow: 0px 0px 20px white; */
+}
+/* Custom scrollbar styling */
+.modal-content-selected-user::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.modal-content-selected-user::-webkit-scrollbar-track {
+  background: #333; /* Background color of the scrollbar track */
+  border-radius: 1rem; /* Rounded corners for track */
+}
+
+.modal-content-selected-user::-webkit-scrollbar-thumb {
+  background: #555; /* Color of the scrollbar thumb */
+  border-radius: 1rem; /* Rounded corners for thumb */
+}
+
+.modal-content-selected-user::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Color of the scrollbar thumb on hover */
+}
+.modal-content-selected-user h2{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+.selected-user-profile-details{
+  background-color: red;
+  max-height: 10vh;
+}
+
+.selected-user-profile-details-others{
+  min-height: 5vh;
+  margin-top: 1rem;
+  background-color: blue;
+}
+.profile-id{
+  margin-left: 5%;
+}
+.profile-name{
+  margin-left: 5%;
+}
+.profile-aadhar, .profile-address, .profile-phone{
+  margin: 0 1rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  overflow: auto;
+  min-width: 25%;
+}
+.profile-aadhar{
+  background-color:rgb(106, 137, 6);
+ 
+}
+.profile-phone{
+  background-color:rgb(137, 58, 6);
+ 
+}
+.profile-address{
+  background-color:rgb(6, 87, 137);
+ 
+}
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.user-view-used-details{
+  min-height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: rgb(66, 83, 66); */
+  overflow: auto;
+}
+.servo-and-price-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.servo-state-box {
+  /* margin: 0 auto; */
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  height: 4rem;
+  width: 10rem;
+  border: 3px dashed green;
+  background-color: rgba(0, 128, 0, 0.422);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-box{ 
+  border: 2px dashed rgb(187, 186, 186);
+  background-color: rgba(255, 166, 0, 0.338);
+}
+.month-box {
+  min-width: 15%;
+  background-color: #1f1f1f; /* Light background for the box */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing inside the box */
+  margin-top: 10px; /* Spacing between boxes */
+  margin: .3rem;
+}
+.current-month-box{
+  background-color: rgba(21, 255, 0, 0.267);
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing inside the box */
+  margin-top: 10px; /* Spacing between boxes */
+  margin: .5rem;
+  /* border-color:green;   */
+}
+.userViewDetails{
+  background-color: #ff9900;
+  text-shadow: 0px 0px 8px black;
+  font-weight: 700;
+  &:hover{
+    background-color: #ff4d4d;
+  }
+}
+/* User Details */
+.user-details h3 {
+  margin-top: 20px;
+  color: #333333;
+}
+.user-details h4 {
+  margin-top: 15px;
+  color: #a9a7a7; /* Slightly lighter color for h4 */
+}
+
+.user-details p {
+  margin: 5px 0;
+  /* background-color: red; */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-dashboard-main{
+    
+    min-height: 80vh;
+  }
+  .admin-dashboard-container {
+    padding: 10px;
+  }
+  .month-box{
+    max-width: 25%;
+  }
+  .admin-dashboard-table th,
+  .admin-dashboard-table td {
+    padding: 8px;
+  }
+
+  .admin-dashboard-header h1 {
+    font-size: 22px;
+  }
+  .user-profile-details-others{
+    flex-direction: column;
+  }
+  .profile-aadhar, .profile-address, .profile-phone{
+    max-width: 80%;
+    margin-left: 5%;
+  }
+  .close-button{
+    width: 2rem;
+  }
+}
+.load{
+  font-size: large;
+  margin: 0 auto;
+  margin-left: 50%;
+  margin-top: 50vh;
+}

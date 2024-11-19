@@ -1,0 +1,95 @@
+/* General styling for the SetLimit component */
+.setlimit-container {
+      width: 50%;
+    /* height: 50%; */
+    margin: 10vh 30%;
+    border-radius: 1rem;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  .setlimit-header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .setlimit-header h1 {
+    font-size: 2.5rem;
+    color: #ff9900; /* Bright orange for the title */
+    text-shadow: 2px 2px 5px #333;
+  }
+  
+  /* Main form styling */
+  .setlimit-main {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1a1a1a; /* Dark background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+  }
+  
+  .setlimit-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #00ccff; /* Light blue for labels */
+  }
+  
+  .setlimit-form input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .setlimit-form input[type="number"]::placeholder {
+    color: #aaa;
+  }
+  
+  /* Button styling */
+  .setlimit-form button {
+    background-color: #ff9900; /* Bright orange for button */
+    color: #fff;
+    text-shadow: 0px 0px 8px black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .setlimit-form button:hover {
+    background-color: #cc7a00; /* Darker orange on hover */
+  }
+  
+  /* Footer styling */
+  .setlimit-footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .setlimit-footer p {
+    font-size: 0.9rem;
+    color: #888; /* Light gray for the footer text */
+  }
+  /* .load{
+    font-size: large;
+    margin: 0 auto;
+    margin-left: 50%;
+    margin-top: 50vh;
+  } */

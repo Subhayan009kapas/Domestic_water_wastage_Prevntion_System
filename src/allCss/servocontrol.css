@@ -1,0 +1,240 @@
+/* servoControl.css */
+
+.servo-control-container {
+    width: 50%;
+    min-width: 50%;
+    /* background-color: #000000; Black background */
+    color: #f5f5f5; /* Light text color */
+    padding: 20px;
+    border-radius: 1rem;
+    min-height: 70vh;
+    margin: 10vh 30%;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.servo-control-header-all {
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: white;
+}
+
+.servo-control-header h1 {
+  font-size: 2rem;
+  color: #00bcd4;
+}
+
+.servo-control-main {
+  width: 100%;
+  max-width: 650px;
+  background-color: #cfcfcf2a;
+  backdrop-filter: blur(5px);/* Dark background for the form */
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-and-bar{
+  width: 80%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  background-color: #2a2a2a;
+  box-shadow: 0px 0px 25px black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.servo-control-toggle {
+  margin: 1em 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+.total-usage-on-servo{
+  position: relative;
+  top: 20px;
+}
+.total-usage-on-servo{
+  font-size: 1.2rem;
+  background:  linear-gradient(145deg, #4ec0f5, #6313ef, rgb(81, 12, 229), rgb(81, 12, 229), rgb(47, 174, 237));;
+  border-radius: 20px;
+  padding: 10px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; width: 26px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #1de9b6;
+}
+
+input:checked + .slider:before {
+  transform: translateX(46px);
+}
+
+.usage-bar {
+  width: 70%;
+  height: 30px;
+  border-radius: 15px;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px black;
+}
+.filled-bar {
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.usage-buttons {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.usage-buttons button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #00bcd4;
+  color: #fff;
+  text-shadow: 0px 10px 5px black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.usage-buttons button:hover {
+  background-color: #1de9b6;
+}
+
+.usages-message {
+  text-align: center;
+  max-width: 80%;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.bar {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  background-color: #e0e0e0; /* Grey background for empty bar */
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.bar-green {
+  background-color: green;
+  height: 100%;
+}
+
+.bar-orange {
+  background-color: orange;
+  height: 100%;
+}
+
+.bar-red {
+  background-color: red;
+  height: 100%;
+}
+
+.total-usage {
+  /* position: relative;
+  top: -2rem; */
+  mix-blend-mode:difference ;
+  box-shadow:0px 0px 10px black ;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  
+  to {
+    visibility: hidden;
+  }
+  
+}
+
+.load {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  position: fixed;
+  top: 0vh;
+  left: 5%;
+}
+@media (max-width:768px){
+  .total-usage-on-servo{
+    font-size: 0.9rem;
+    background:  linear-gradient(145deg, #4ec0f5, #6313ef, rgb(81, 12, 229), rgb(81, 12, 229), rgb(47, 174, 237));;
+    border-radius: 20px;
+    padding: 8px;
+    width: 120%;
+    font-weight: 700;
+    text-align: center;
+
+  }
+  .total-usage-on-servo{
+    position: relative;
+    top: -15px;
+  }
+  .servo-control-main .usages-title{
+    padding: 5px;
+  
+  }
+  .servo-control-main{
+    width: 115%;
+  }
+}

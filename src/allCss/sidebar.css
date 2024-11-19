@@ -1,0 +1,156 @@
+.sidenav {
+  position: fixed;
+  max-width: 16rem;
+  top: 0;
+  left: 10px;
+  z-index: 100;
+  margin-top: 2.5vh;
+  min-height: 95vh;
+  width: 20vw;
+  background: linear-gradient(145deg, #4ec0f5, #6313ef, rgb(81, 12, 229), rgb(81, 12, 229), rgb(47, 174, 237));
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0), -5px -5px 10px rgb(0, 0, 0), inset -5px -5px 10px rgb(48, 14, 66), inset 5px 5px 10px rgb(48, 14, 66);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+.sidenav h1{
+  font-size: 1.7rem;
+}
+.sidenavimg{
+  background-color:rgb(50, 148, 253);
+  /* font-size: 2rem; */
+  border-radius: 50%;
+  height:8rem;
+}
+.nav-item {
+  width: 80%;
+  margin: 2vh 0; /* Adds vertical spacing between items */
+  text-align: center; /* Center text */
+}
+
+.nav-link {
+  font-size: 1rem; /* Increased font size */
+  font-weight: bold; /* Bold text */
+  color: white;
+  text-decoration: none; /* Remove underline */
+  padding: 10px;
+  border-radius: .7rem;
+  transition: .3s all;
+  display: block; /* Makes the link fill its container */
+  background-color:#412474 ;
+  display: flex;
+  justify-content: center;
+
+}
+
+.innerNavbar{
+  width: 70%; 
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.innerNavbar svg{
+  width: 24px; /* Desired width */
+    height: 24px; /* Desired height */
+    margin-right: 8px; /* Space between the SVG and text */
+}
+.userIinnerNavbar{
+  width: 75%; 
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.nav-link svg{
+  /* background-color: red  ; */
+  width: 1.8rem;
+}
+.nav-link:hover {
+  background-color: #8448ed; /* Background color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.last-of-admin{
+  position: absolute;
+  width: 75%;
+  bottom: 5rem;
+  background-color: #b92910;
+  &:hover{
+    background-color: #911f0b;
+  }
+}
+
+.expand-sidenavabr{
+  /* background-color: #4ec0f5; */
+  position: fixed ;
+  left: 0rem;
+  bottom: 0rem;
+  z-index: 101;
+  display: none;
+  /* left: 10%; */
+  background-color: transparent;
+  &:hover{
+    background-color: transparent;
+  }
+}
+.expand-sidenavabr svg{
+  background-color: transparent;
+  color: transparent;
+  width: 2rem;
+  height: 2rem;
+}
+.sidebar-close-button{
+  /* background-color: #4ec0f5; */
+  transform: translate(15rem);
+}
+.space-for-sidenav-h1{
+  position: absolute;
+  top: 5rem;
+  left: 0rem;
+  height: 2rem;
+  width: 5rem;
+  text-align: center;
+  /* background-color: rebeccapurple; */
+}
+@media (max-width: 768px) {
+
+  
+
+  .sidebar-open-button{
+    /* background-color: red; */
+    position: relative;
+    bottom: 2rem;
+  }
+  .sidebar-close-button{
+    position: relative;
+    bottom: 2rem; 
+  }
+  .sidenav{
+    
+    max-width: 4.2rem;
+
+  }
+  .nav-name{
+    display: none;
+  }
+  .user-profile-icon-sidebar{
+    height: 3.5rem;
+  }
+
+
+
+
+  .space-for-sidenav-h1{
+    height: 2rem;
+    /* width: 2rem; */
+    text-align: center;
+    /* background-color: rebeccapurple; */
+  }
+  .sidenav h1{
+    font-size: 1rem;
+    font-weight: none;
+    text-align: center;
+  }
+  .nav-link{
+    margin-top: 20px;
+  }
+}
