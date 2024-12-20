@@ -113,7 +113,7 @@ function NewPayment({userId}) {
         doc.text(`Bill Date: ${selectedMonth.paid_date}`, 10, 50);
         doc.text(`Valid ID: ${userDetails[2]}`, 120, 50);
         doc.text(`Payment Status: ${selectedMonth.paid ? 'paid':'not paid'}`, 10, 55);
-        doc.text(`Consumer Number: ${userDetails[3]}`, 120, 55);
+        doc.text(`Consumer Address: ${userDetails[3]}`, 120, 55);
     
         // Line separator
         doc.line(10, 60, 200, 60);
