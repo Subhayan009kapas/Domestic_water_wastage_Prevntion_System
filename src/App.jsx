@@ -8,7 +8,7 @@ import SetPrice from './admin/SetPrice';
 import AdminViewAllUsers from './admin/AdminViewAllUsers';
 import Laout from './admin/Laout';
 import ServoControl from './users/ServoControl';
-import Waterflow from './users/Waterflow';
+import Waterflow from './users/WaterFlow';
 import ViewAnalytics from './users/viewAnalytics';
 import Userlayout from './users/Userlayout';
 import Authentic from './authentication/Authentic'; // Adjust the import path as needed
