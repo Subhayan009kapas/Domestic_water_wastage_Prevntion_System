@@ -4,13 +4,13 @@ import './App.css';
 import LandingPage from './landing/LandingPage';
 import SetLimit from "./admin/SetLimit";
 
-import SetPrice from './admin/setprice';
+import SetPrice from './admin/SetPrice';
 import AdminViewAllUsers from './admin/AdminViewAllUsers';
 import Laout from './admin/Laout';
 import ServoControl from './users/ServoControl';
 import Waterflow from './users/Waterflow';
 import ViewAnalytics from './users/viewAnalytics';
-import Userlayout from './users/userlayout';
+import Userlayout from './users/Userlayout';
 import Authentic from './authentication/Authentic'; // Adjust the import path as needed
 import { UserContext } from './authentication/UserContext';
 import ListOfAdmin from './admin/ListOfAdmin';
