@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { db } from '../firebaseConfig';  // Adjust the path as necessary
 import { doc, getDoc, setDoc, onSnapshot, updateDoc } from 'firebase/firestore';  // Import updateDoc for updating fields
-import '../allCss/servoControl.css';  // Import your CSS for user page styling
+import '../allCss/servocontrol.css';  // Import your CSS for user page styling
 
 const ServoControl = ({ userId }) => {
   const [servoState, setServoState] = useState(null);
