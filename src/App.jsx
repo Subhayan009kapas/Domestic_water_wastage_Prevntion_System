@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import LandingPage from './landing/LandingPage';
-import SetLimit from './admin/setlimit';
+import SetLimit from "./admin/SetLimit";
+
 import SetPrice from './admin/setprice';
 import AdminViewAllUsers from './admin/AdminViewAllUsers';
 import Laout from './admin/Laout';
