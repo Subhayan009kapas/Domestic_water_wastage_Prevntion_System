@@ -9,7 +9,7 @@ import AdminViewAllUsers from './admin/AdminViewAllUsers';
 import Laout from './admin/Laout';
 import ServoControl from './users/ServoControl';
 import Waterflow from './users/WaterFlow';
-import ViewAnalytics from './users/viewAnalytics';
+import ViewAnalytics from './users/ViewAnalytics';
 import Userlayout from './users/Userlayout';
 import Authentic from './authentication/Authentic'; // Adjust the import path as needed
 import { UserContext } from './authentication/UserContext';
