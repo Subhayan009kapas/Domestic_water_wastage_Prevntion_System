@@ -4,6 +4,7 @@
   import { collection, getDocs, getDoc } from "firebase/firestore";
   import { monthCode } from '../assets/globalMonthData';  // Import your global monthCode data
   import '../allCss/payment.css';
+import Loader from '../Loader/Loader';
 
 
 
@@ -413,6 +414,7 @@
         {loading ? (
           <div className="loading-container">
             <p className="load">Loading...</p>
+            
           </div>
         ) : (<div className='outer-payment-main'>
             <main className="payment-main">
